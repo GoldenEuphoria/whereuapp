@@ -21,7 +21,10 @@ class _Msg1PageState extends State<Msg1Page> {
            Row( children :<Widget> [
              SizedBox( width:1.0),
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> accident1 (){
+                  String messageAccident = "une accident dans la route , évitez-la";
+                  addMesssage(messageAccident, TypeMessage.Accident, expediteurID, expediteurNom);
+                  },
                    padding :EdgeInsets.all(19.0),
                   
                 color:  Color(0xFFF1B97A),
@@ -37,7 +40,10 @@ class _Msg1PageState extends State<Msg1Page> {
             Row( children :<Widget> [
              SizedBox( width:1.0),
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> etatroute1 (){
+                  String messageEtatRoute = "une route encombrée,évitez-la";
+                  addMesssage(messageEtatRoute, TypeMessage.EtatRoute, expediteurID, expediteurNom);
+                  },
                    padding :EdgeInsets.all(20.0),
                   
                 color:  Color(0xFFF1B97A),
@@ -55,7 +61,10 @@ class _Msg1PageState extends State<Msg1Page> {
             Row( children :<Widget> [
              SizedBox( width:1.0),
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> etatroute2 (){
+                    String messageEtatRoute = "la route est bloquée";
+                   addMesssage(messageEtatRoute, TypeMessage.EtatRoute, expediteurID, expediteurNom);
+                   },
                    padding :EdgeInsets.all(20.0),
                   
                 color:  Color(0xFFF1B97A),
@@ -70,7 +79,10 @@ class _Msg1PageState extends State<Msg1Page> {
             Row( children :<Widget> [
              SizedBox( width:1.0),
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> etatroute3 (){
+                  String messageEtatRoute = "une chaussée glissante ,attention ";
+                  addMesssage(messageEtatRoute, TypeMessage.EtatRoute, expediteurID, expediteurNom);
+                  },
                    padding :EdgeInsets.all(22.0),
                   
                 color:  Color(0xFFF1B97A),
@@ -86,7 +98,10 @@ class _Msg1PageState extends State<Msg1Page> {
             Row( children :<Widget> [
              SizedBox( width:1.0),
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> etatroute4 (){
+                  String messageEtatRoute = "un passage d'animaux, attendez un peu";
+                  addMesssage(messageEtatRoute, TypeMessage.EtatRoute, expediteurID, expediteurNom);
+                  },
                    padding :EdgeInsets.all(19.0),
                   
                 color:  Color(0xFFF1B97A),

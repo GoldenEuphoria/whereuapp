@@ -23,7 +23,10 @@ class _Msg2PageState extends State<Msg2Page> {
             Row( children :<Widget> [
              SizedBox( width:40.0),
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> vitesse (){
+                   String messageVitesse = "Réduire votre vitesse,SVP";
+                   addMesssage(messageVitesse, TypeMessage.Vitesse, expediteurID, expediteurNom);
+                  },
                    padding :EdgeInsets.all(20.0),
                   
                 color:  Color(0xFFF1B97A),

@@ -21,7 +21,10 @@ class _Msg4PageState extends State<Msg4Page> {
            Row( children :<Widget> [
              SizedBox( width:10.0),
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> aboutgroupe1(){
+                   String messageAboutGroupe = "Je ne peux pas vous rejoindre dans notre prochain trajet.";
+                   addMesssage(messageAboutGroupe, TypeMessage.AboutGroupe, expediteurID, expediteurNom);
+                   },
                    padding :EdgeInsets.all(40.0),
                   
                 color:  Color(0xFFF1B97A),
@@ -39,7 +42,10 @@ class _Msg4PageState extends State<Msg4Page> {
             
        
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> aboutgroupe2(){
+                    String messageAboutGroupe = "Que pensez vous d'un voyage commun le weekend prochain ? ";
+                    addMesssage(messageAboutGroupe, TypeMessage.AboutGroupe, expediteurID, expediteurNom);
+                   },
                    padding :EdgeInsets.all(40.0),
                   
                 color:  Color(0xFFF1B97A),

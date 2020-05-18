@@ -21,7 +21,10 @@ class _Msg3PageState extends State<Msg3Page> {
            Row( children :<Widget> [
              SizedBox( width:30.0),
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> Meteo1 (){
+                    String messageMeteo = "il pleut,soyez prudents";
+                    addMesssage(messageMeteo, TypeMessage.Meteo, expediteurID, expediteurNom);
+                   },
                    padding :EdgeInsets.all(22.0),
                   
                 color:  Color(0xFFF1B97A),
@@ -37,7 +40,10 @@ class _Msg3PageState extends State<Msg3Page> {
             Row( children :<Widget> [
              SizedBox( width:30.0),
             RaisedButton( 
-                  onPressed: () => print( ''),
+                  onPressed: () => Future<void> Meteo2 (){
+                    String messageMeteo = "il y'a du brouillard, attention ";
+                    addMesssage(messageMeteo, TypeMessage.Meteo, expediteurID, expediteurNom);
+                    },
                    padding :EdgeInsets.all(22.0),
                   
                 color:  Color(0xFFF1B97A),
